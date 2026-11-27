@@ -207,4 +207,4 @@ def main():
 
 if __name__=="__main__":
     model = main()
-    torch.save(model.state_dict(), "./pokemon_model.pth")
+    torch.save(model.state_dict(), "./pokemon_model_2.pth")

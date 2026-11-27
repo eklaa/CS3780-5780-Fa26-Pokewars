@@ -32,7 +32,7 @@ class PokemonTestDataset(Dataset):
         return preprocess(img1_path), preprocess(img2_path)
 
 # 3. Inference & Submission Generation
-def create_submission(model_path="./pokemon_model.pth", test_csv="./test.csv", data_dir=""):
+def create_submission(model_path="./pokemon_model_2.pth", test_csv="./test.csv", data_dir=""):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # Load model weights
